@@ -1,0 +1,175 @@
+/* Общие стили */
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Логотип */
+.box {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+/* Текст с информацией */
+.info {
+    color: rgba(143, 15, 228, 0.441);
+    font-size: 14px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Стиль для всего контента */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ставим элементы в колонку */
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+/* Контейнер для всех элементов */
+.container {
+    background: rgb(70, 6, 89);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Заголовок */
+h1 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* Стиль для области загрузки */
+.upload-box {
+    margin-bottom: 20px;
+}
+
+.upload-label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: black;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.upload-label:hover {
+    background-color: #45a049;
+}
+
+#fileInput {
+    display: none; /* Прячем стандартное поле ввода */
+}
+
+/* Стиль для блока предпросмотра изображения */
+.preview-box {
+    margin-top: 20px;
+}
+
+#imagePreview {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Стиль для кнопки "Отправить" */
+.submit-box {
+    margin-top: 20px;
+}
+
+#submitBtn {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submitBtn:hover {
+    background-color: #45a049;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+    .box {
+        margin-top: 10px;
+    }
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .info {
+        margin-left: 20px;
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .upload-label {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    #imagePreview {
+        max-height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .upload-label {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .info {
+        font-size: 10px;
+        margin-left: 10px;
+    }
+
+    #imagePreview {
+        max-height: 200px;
+    }
+}

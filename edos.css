@@ -1,0 +1,104 @@
+/* Основные стили для страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Темно-серый фон */
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Центрируем основной контейнер */
+.box {
+    width: 80%;
+    height: 80%;
+    background: linear-gradient(135deg, #6a0dad, #3f0e56); /* Черно-фиолетовый градиент */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Стиль для модального окна */
+#age-verification-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Темный полупрозрачный фон */
+    z-index: 9999;
+}
+
+/* Контейнер модального окна */
+.modal-content {
+    background-color: black; /* Темно-серый фон для модального окна */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Заголовок модального окна */
+.modal-content h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Текст предупреждения */
+.modal-content p {
+    color: #d1d1d1;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Кнопки */
+.modal-content button {
+    padding: 12px 24px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Цвет для кнопки "Мне 18 или больше" */
+#age-confirm {
+    background-color: #6a0dad;
+    color: white;
+    border: 2px solid #6a0dad;
+}
+
+#age-confirm:hover {
+    background-color: #8e2a8f;
+    border: 2px solid #8e2a8f;
+}
+
+/* Цвет для кнопки "Мне меньше 18" */
+#age-deny {
+    background-color: #d9534f;
+    color: white;
+    border: 2px solid #d9534f;
+}
+
+#age-deny:hover {
+    background-color: #c9302c;
+    border: 2px solid #c9302c;
+}
+
+.animation2 {
+    width: 120px;
+    height: 120px;
+    border-radius: 6px;
+}

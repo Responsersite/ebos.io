@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edos.ai</title>
+    <link rel="stylesheet" href="./page.css">
+    <link rel="icon" href="./img/Снимок2.PNG" type="image/x-icon">
+</head>
+<body>
+    <div class="box">
+        <img class="logo" src="./img/Снимок2.PNG" alt="">
+    </div>
+    
+    <p class="info">Инструмент для раздевания с помощью искусственного интеллекта — приложение Deepnude от edos.ai</p>
+    
+    <div class="container">
+        <h1>Загрузите ваше фото</h1>
+    
+        <div class="upload-box">
+            <input type="file" id="fileInput" accept="image/*">
+            <label for="fileInput" class="upload-label">Выберите изображение</label>
+        </div>
+        
+        <div class="preview-box">
+            <img id="imagePreview" src="" alt="Предпросмотр" style="display: none;">
+        </div>
+
+        <!-- Кнопка "Отправить" (сначала скрыта) -->
+        <div class="submit-box">
+            <button id="submitBtn" style="display: none;" onclick="window.location.href='subcribe.html'">Отправить</button>
+        </div>
+    </div>
+   
+    
+    <script src="./page.js"></script>
+</body>
+</html>
